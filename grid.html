@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .parent {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 10% 80% 10%;
+        }
+        .header {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            background-color: #2C3E50; /* Dark Blue-Grey */
+            
+        
+        }
+        .leftmenu {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background-color: #3498DB; /* Blue */
+        
+        
+        }
+        .main {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-color: #ECF0F1; /* Light Grey */
+            
+        }
+        .rightmenu {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background-color: #3498DB; /* Blue */
+            
+        }
+        .footer {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            background-color: #E74C3C; /* Red */
+        
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class="header">Header</section>
+        <section class="leftmenu">Left Menu</section>
+        <section class="main">Main Content</section>
+        <section class="rightmenu">Right Menu</section>
+        <section class="footer">Footer</section>
+    </section>
+</body>
+</html>

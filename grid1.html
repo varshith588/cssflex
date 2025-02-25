@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+   
+    }
+    .parent {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 10% 45% 45%;
+      grid-template-rows: 25% 25% 25% 25%;
+      gap: 10px;
+    }
+    .header {
+      background-color: chartreuse;
+      display: flex;
+      grid-column: 1/4;
+      grid-row: 1/2;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+    .sidebar {
+      background-color: aqua;
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/4;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+    .c1 {
+      background-color: orange;
+      display: flex;
+      grid-column: 2/4;
+      grid-row: 2/3;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+    .c2 {
+      background-color: purple;
+      display: flex;
+      grid-column: 3/4;
+      grid-row: 3/4;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+    .c3 {
+      background-color: mediumslateblue;
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 3/4;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+    .footer {
+      background-color: coral;
+      display: flex;
+      grid-column: 1/4;
+      grid-row: 4/5;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <section class="parent">
+      <section class="header">Header</section>
+      <section class="sidebar">SideBar</section>
+      <section class="c1">Content1</section>
+      <section class="c2">Content2</section>
+      <section class="c3">Content3</section>
+      <section class="footer">Footer</section>
+    </section>
+  </body>
+</html>
